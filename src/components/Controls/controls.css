@@ -1,0 +1,33 @@
+
+#controls{
+position: relative;
+margin: 3px auto 5px auto;
+width: 234px;
+}
+
+.btn-control{
+background: none;
+padding: 0px !important;
+outline: 0;
+border: 0;
+border: 2px solid #04befb;
+width: 52px;
+height: 52px;
+color: #04befb;
+margin: 0px 12px;
+cursor: pointer;
+text-align: center;
+border-radius: 50%;
+}
+.btn-control i{
+padding: 2px;
+font-size: 24px;
+}
+
+.btn-control i.fa-play, .btn-control i.fa-forward{
+padding-left: 5px;
+}
+
+.btn-control i.fa-backward{
+margin-left: -4px;
+}

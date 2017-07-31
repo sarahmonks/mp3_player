@@ -1,0 +1,24 @@
+#display-area{
+position: relative;
+color: #fff;
+width: 96%;
+padding: 0px 2% 15px 2%;
+}
+
+.sound-title, .sound-artist{
+display: block;
+height: 20px;
+}
+.sound-artist{
+font-size: .9rem;
+}
+
+#display-area .sound-title, 
+#display-area .sound-artist{
+text-transform: uppercase;
+text-align: center;
+}
+
+#display-area .sound-title{
+font-weight: bold;
+}

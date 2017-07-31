@@ -1,0 +1,255 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, address, em, img, q,small, strong, b, i,
+ol, ul, li,form, label, table, caption,tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+html{
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-text-size-adjust: 100%; /*stops the font from stretching on the iphone on orientation change*/
+height: 100%;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+display:block;
+}
+a{
+text-decoration: none;
+color: #fff;
+}
+ul{
+list-style: none;
+}
+body{
+letter-spacing: .4px;
+margin-top: 0px;  
+font-family:Arial,Helvetica,sans-serif;
+width: 100%;
+overflow: auto;
+z-index: 1;
+height: 100%;
+line-height: 1.8rem;
+color: #fff;
+position: relative;
+font-size: 1.0rem;
+}
+
+h1{
+font-size: 1.3rem;
+}
+
+/*styling for the scrollbar and scrolling functionality*/
+::-webkit-scrollbar{  
+padding: 1px;
+width: 2px;  
+background-color: #353535;
+}  
+
+::-webkit-scrollbar-track { 
+z-index: 400;
+border-radius: 2px; 
+background-color: #353535;  
+}  
+
+::-webkit-scrollbar-thumb{ /*styling for scrollbar thumb*/
+border-radius: 2px; 
+background-color: #939396; 
+}  
+::-webkit-scrollbar-thumb:hover {  
+background-color: #dfdfdf; 
+} 
+
+.scrollable{
+overflow: scroll;
+-webkit-transition-property: top, bottom;
+-moz-transition-property: top, bottom;
+-o-transition-property: top, bottom;
+transition-property: top, bottom;
+
+-webkit-transition-duration: .2s, .2s;
+-moz-transition-duration: .2s, .2s;
+-o-transition-duration: .2s, .2s;
+transition-duration: .2s, .2s;
+
+-webkit-transition-timing-function: linear, linear;
+-moz-transition-timing-function: linear, linear;
+-o-transition-timing-function: linear, linear;
+transition-timing-function: linear, linear;
+-webkit-overflow-scrolling: touch;
+}
+
+
+.scrollable-container{
+position: absolute;
+left: 0px;
+top: 0px;
+display: block;
+margin: 0 auto;
+width: 100%;
+overflow: auto;
+z-index: 2;
+-webkit-transition: .3s; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+-moz-transition: .3s;
+-o-transition: .3s;
+transition: .3s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+height: 100%;
+}
+
+
+
+.btn-inline{
+background: none;
+padding: 5px 0px 0px 0px !important;
+outline: 0;
+border: 0;
+font-size: 18px;
+width: 40px;
+height: 40px;
+color: #f20c96;
+cursor: pointer;
+text-align: center;
+display: block;
+float: left;
+}
+
+
+
+.overlay{	
+height: 100%;
+background-attachment: fixed;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.67+0,0.42+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.42) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.67) 0%,rgba(0,0,0,0.42) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.67) 0%,rgba(0,0,0,0.42) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab000000', endColorstr='#6b000000',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.81+0,0.61+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.81) 0%, rgba(0,0,0,0.61) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.81) 0%,rgba(0,0,0,0.61) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.81) 0%,rgba(0,0,0,0.61) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf000000', endColorstr='#9c000000',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a4e59+0,4a4e59+100&0.81+0,0.61+100 */
+background: -moz-linear-gradient(top, rgba(74,78,89,0.81) 0%, rgba(74,78,89,0.61) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(74,78,89,0.81) 0%,rgba(74,78,89,0.61) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(74,78,89,0.81) 0%,rgba(74,78,89,0.61) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf4a4e59', endColorstr='#9c4a4e59',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e4149+0,586168+100&0.85+0,0.65+100 */
+background: -moz-linear-gradient(top, rgba(62,65,73,0.85) 0%, rgba(88,97,104,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(62,65,73,0.85) 0%,rgba(88,97,104,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(62,65,73,0.85) 0%,rgba(88,97,104,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d93e4149', endColorstr='#a6586168',GradientType=0 ); /* IE6-9 */
+}
+
+#main-container{
+position: absolute;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+
+overflow: auto;
+z-index: 4; /*the main-container div needs to have a higher z-index than the side panel area so that it sits on top of it*/
+/*add css transitions for when the main-container is swiped to the left and right*/
+/*the swiping transition will take .3 seconds*/
+-webkit-transition: .3s; 
+-moz-transition: .3s;
+-o-transition: .3s;
+transition: .3s;  
+
+background: url(../img/nice.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: repeat;
+background: #e3e3e3;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e4149+0,586168+100 */
+background: rgb(62,65,73); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(62,65,73,1) 0%, rgba(88,97,104,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(62,65,73,1) 0%,rgba(88,97,104,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(62,65,73,1) 0%,rgba(88,97,104,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4149', endColorstr='#586168',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3d4047+1,4c5059+100 */
+background: rgb(61,64,71); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(61,64,71,1) 1%, rgba(76,80,89,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(61,64,71,1) 1%,rgba(76,80,89,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(61,64,71,1) 1%,rgba(76,80,89,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d4047', endColorstr='#4c5059',GradientType=0 ); /* IE6-9 */
+}
+
+#controls-area{
+position: fixed;
+left: 0px;
+bottom: 0px;
+height: 155px;
+width: 100%;
+z-index: 10;
+border-top: 2px solid #04befb;
+background: url(../img/nice.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+overflow: hidden; 
+background: rgb(61,64,71); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(61,64,71,1) 1%, rgba(76,80,89,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(61,64,71,1) 1%,rgba(76,80,89,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(61,64,71,1) 1%,rgba(76,80,89,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d4047', endColorstr='#4c5059',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+/*this class will be added to main-container when the user opens the side panel*/
+.swipe-left{
+-webkit-transform: translateX(-80%); 
+-moz-transform: translateX(-80%);  
+-o-transform: translateX(-80%);  
+transform: translateX(-80%);
+}
+
+
+
+/*Styling for form fields*/
+input[type="text"]{
+box-shadow: none;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+border: 0px;
+outline: 0px;
+background:none;
+border: 1px solid #5f5f5f;
+border:1px solid #8b8a8a;
+color:#eceaea;
+font-size: 1.0rem;
+border-radius:2px; 
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+width: 90% !important;
+height:26px;
+font-family: Raleway, FontAwesome; /*need to put font awesome here for the icons in the input fields */
+display: block;
+letter-spacing: .7px; 
+padding: 5px 2% 5px 2% !important;
+margin: 10px auto;
+}
+
+
+input[type="text"]:focus{
+overflow: visible;
+color: #fff; 
+border:1px solid #999898;
+box-shadow: inset 0px 0px 0px 100px #000;
+-moz-box-shadow: inset 0px 0px 0px 100px #000;
+-webkit-box-shadow: inset 0px 0px 0px 100px #000;
+}
+
+
+input[type="text"]:-moz-placeholder, input[type="text"]::-webkit-input-placeholder{ 
+color: #eceaea;
+}

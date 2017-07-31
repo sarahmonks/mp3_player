@@ -1,0 +1,48 @@
+#list-of-sounds-container{
+padding-top: 50px;
+overflow: hidden; 
+z-index: 5;
+}
+
+#list-of-sounds{
+position: relative;
+width: 100%;
+min-height: 800px;
+height: 100%;
+}
+
+.sound-list-item{
+padding: 5px 4% 10px 4%;
+width: 92%;
+height: 40px;
+cursor: pointer;
+border-bottom: 1px solid #5b606c;
+overflow: hidden;
+}
+
+.sound-info-area{
+float: left;
+display: block;
+width: 50%;
+min-width: 150px;
+}
+
+.sound-title, .sound-artist{
+display: block;
+height: 20px;
+}
+.sound-artist{
+font-size: .9rem;
+}
+.fa-heart{
+margin-left: 20px;
+color: #ff01ea;
+font-size: 26px;
+}
+.selected{
+background: #6a707c;
+background: #313339;
+box-shadow: 		inset -3px 0px 0px 0px rgba(4,191,251,1), inset 3px 0px 0px 0px rgba(4,191,251,1); 
+-moz-box-shadow: 	inset -3px 0px 0px 0px rgba(4,191,251,1), inset 3px 0px 0px 0px rgba(4,191,251,1);  
+-webkit-box-shadow: 	inset -3px 0px 0px 0px rgba(4,191,251,1), inset 3px 0px 0px 0px rgba(4,191,251,1);  
+}

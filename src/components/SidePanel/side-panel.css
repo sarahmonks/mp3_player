@@ -1,0 +1,32 @@
+/*styling for side panel area and container*/
+#side-panel-area{
+position:absolute; /*use position absolute so we can lay the main-container div element over it*/
+top: 0px;
+left: 20%;
+height: 100%;
+width: 80%;
+overflow: auto; /*we use this instead of overflow scroll so that the scrollbar only shows if the content overflows the area*/
+-webkit-transition: .3s; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+-moz-transition: .3s;
+-o-transition: .3s;
+transition: .3s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+background: #1b1f20;
+-webkit-box-shadow: inset 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow:    inset 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
+box-shadow:         inset 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
+z-index: 2; /*the z-index of this panel_area needs to be lower than the main-container z-index so that it sits underneath it*/
+}
+.side-panel-container{
+position: relative; 
+overflow: hidden;
+}
+.side-panel-header{
+position: relative;
+width: 95%;
+padding: 14px 1% 14px 4%;
+font-weight: normal;
+-webkit-box-shadow: inset 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow:    inset 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
+box-shadow:         inset 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
+overflow: hidden;
+}

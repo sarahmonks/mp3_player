@@ -1,0 +1,66 @@
+/*styling for the header navigation menu*/
+header{
+position: relative;
+width: 100%;
+display: block;
+z-index: 20; 
+}
+
+.header-nav{ 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.67+0,0.42+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.42) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.67) 0%,rgba(0,0,0,0.42) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.67) 0%,rgba(0,0,0,0.42) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab000000', endColorstr='#6b000000',GradientType=0 ); /* IE6-9 */ 	
+background: #e3e3e3;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#393b42+1,404249+100 */
+background: rgb(57,59,66); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(57,59,66,1) 1%, rgba(64,66,73,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(57,59,66,1) 1%,rgba(64,66,73,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(57,59,66,1) 1%,rgba(64,66,73,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#393b42', endColorstr='#404249',GradientType=0 ); /* IE6-9 */
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%; 
+/*add a high z-index value so that this fixed header stays on top of everything else on the page*/ 
+z-index: 20; 
+/*add css transitions for when the headernav is swiped to the left and right*/
+/*the swiping transition will take .3 seconds*/
+-webkit-transition: .3s; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+-moz-transition: .3s;
+-o-transition: .3s;
+transition: .3s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+overflow: hidden; /*add this to clear below the floats*/
+height: 48px;
+-webkit-box-shadow: inset 0px -1px 0px 0px rgba(24, 24,24, 1);
+-moz-box-shadow:    inset 0px -1px 0px 0px rgba(24, 24,24,1);
+box-shadow:        inset 0px -1px 0px 0px rgba(24, 24,24, 1);
+}
+
+.header-menu-item{
+position: relative; 
+float: left; 
+width: 15%;
+height: 48px;
+}
+
+/*the following class is applied to the anchor tags in the header navigation*/
+.header-menu-link{
+position: relative;
+display:block;  
+padding: 10px 0px 0px 0px;
+text-align: center;
+width: 100%;
+height: 48px;
+font-size: 22px;
+color: #fff; 
+cursor: pointer;
+-webkit-box-sizing:	border-box;
+-moz-box-sizing:	border-box; 
+box-sizing:		border-box;
+}
+
+.header-menu-item.navicon{
+float: right; 
+}
