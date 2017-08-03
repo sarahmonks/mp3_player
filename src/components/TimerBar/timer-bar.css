@@ -1,4 +1,4 @@
-
+/*This file contains all styles related to the TimerBar component*/
 
 #timer-area{
 position: relative;
@@ -17,7 +17,7 @@ height: 12px;
 
 .timer-bar-outer{
 padding: 0px 0px 0px 1%; 
-width: 98%;  /*this should be same number as 100/windowduration*/
+width: 98%;  /*this should be same number as 98/windowduration*/
 height: 3px;  
 display: block;  
 position: absolute; 
@@ -26,7 +26,6 @@ border-radius: 1px;
 -webkit-border-radius: 1px;
 -moz-border-radius: 1px;
 background-color: #222327;
-
 clear: both;
 }
 
@@ -41,9 +40,6 @@ border-radius: 1px;
 clear: both;
 position: absolute; 
 margin: 0px 0px 0px 0px;
-box-shadow: 		inset 0px 1px 0px 0px rgba(250,250,250,0.5); 
--moz-box-shadow: 	inset 0px 1px 0px 0px rgba(250,250,250,0.5);  
--webkit-box-shadow: 	inset 0px 1px 0px 0px rgba(250,250,250,0.5);  
 box-shadow: 		none; 
 -moz-box-shadow: 	none;  
 -webkit-box-shadow: 	none;  
@@ -52,6 +48,7 @@ background:#04befb;
 text-align: right;
 }  
 
+/*styling for small circle on timer bar*/
 .timer-bar-circle{
 position: absolute;
 margin-top: -12px; 
