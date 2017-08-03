@@ -16,6 +16,10 @@ npm install
 6. Now the project is set up with all dependencies, type the following command to run the application
 npm start
 
+OR 
+
+set DEBUG=react_app_sarah:* & npm start
+
 The application will be viewable on http://localhost:3000/
 
 
