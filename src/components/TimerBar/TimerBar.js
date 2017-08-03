@@ -2,7 +2,7 @@ import React from 'react';
 import './timer-bar.css';
 
 const TimerBar = function(props) {
-	//this is a stateless component for the timer bar of the audio player. 
+	//This is a stateless component for the timer bar of the audio player. 
 	//
 
 	//To this component, we pass in the following states as properties (These states are defined in AppContainer):
@@ -29,19 +29,19 @@ const TimerBar = function(props) {
 		width: props.currentWidth + '%'
 	};
 	return (<div id="timer-area">
-             		<div id="timer-bar-area">	
-				<div className="timer-bar-outer"></div>
-				<div className="timer-bar" style={currentWidthStyle}>
-					<span className="timer-bar-circle">
-						<i className="fa fa-circle"></i>
-					</span>
-				</div>
-			</div>  
-			<div id="time-of-audio">
-				<p className="audio-current-time">{props.currentTime}</p>
-				<p className="audio-duration">{duration}</p>
-			</div>	
-		</div>
+             	<div id="timer-bar-area">	
+					<div className="timer-bar-outer"></div>
+					<div className="timer-bar" style={currentWidthStyle}>
+						<span className="timer-bar-circle">
+							<i className="fa fa-circle"></i>
+						</span>
+					</div>
+				</div>  
+				<div id="time-of-audio">
+					<p className="audio-current-time">{props.currentTime}</p>
+					<p className="audio-duration">{duration}</p>
+				</div>	
+			</div>
 	);
   
 }
