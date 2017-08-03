@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AudioPlayer = function(props) {
+const AudioPlayer = props => {
 
 	var mp3Src = props.sounds[props.currentSoundIndex].mp3;
 	console.log(mp3Src);

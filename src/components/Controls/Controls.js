@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import './controls.css';
-const Controls = function(props) {
+const Controls = props => {
 	//This is a stateless component	which contains the controls of the music player. i.e play/pause, back and forward buttons
 	return (<div id="controls">					
 			<button onClick={props.goBack} className="btn-control" disabled={props.backButtonIsDisabled}><i className="fa fa-backward"></i></button>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './side-panel.css';
-const SidePanel = function(props) {
+const SidePanel = props => {
 	
 	 return (<div id="side-panel-area" className="scrollable">		
 			<div className="side-panel-container">

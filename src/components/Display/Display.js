@@ -1,6 +1,6 @@
 import React from 'react';
 import './display.css';
-const Display = function(props) {
+const Display = props => {
 	//This component displays the title and artist of the sound which is currently playing.
 	var title;
 	var artist;

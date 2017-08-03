@@ -1,7 +1,7 @@
 import React from 'react';
 import './timer-bar.css';
 
-const TimerBar = function(props) {
+const TimerBar = props => {
 	//This is a stateless component for the timer bar of the audio player. 
 	//
 

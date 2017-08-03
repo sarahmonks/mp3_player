@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 
-const Header = function(props) {
+const Header = props => {
 
 		return (<header>
 			<ul className="header-nav" >

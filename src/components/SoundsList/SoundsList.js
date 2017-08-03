@@ -1,6 +1,6 @@
 import React from 'react';
 import './sounds-list.css';
-const SoundsList = function(props) {
+const SoundsList = props => {
 	//This is a stateless component which contains a list of sounds.
 	//You can navigate to a particular sound in the list by clicking it.
 	 return (<div className="scrollable-container scrollable">
