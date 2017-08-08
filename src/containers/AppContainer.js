@@ -21,14 +21,15 @@ class AppContainer extends Component {
     		super(props);
     		this.state = {
 			sidePanelIsOpen: false,
-			currentSoundIndex: 0,
 			isPlaying: false,
-			playerDuration: 0,
 			currentTime: "0:00",
+			currentSoundIndex: 0,
 			currentWidthOfTimerBar: 0,
+			playerDuration: 0,
 			backButtonIsDisabled: false,
 			forwardButtonIsDisabled: false,
 			playButtonIsDisabled: false
+
 		};
 		this.toggleSidePanel = this.toggleSidePanel.bind(this);
 		this.loadPlayer = this.loadPlayer.bind(this);
@@ -331,15 +332,11 @@ class AppContainer extends Component {
 									currentWidth={this.state.currentWidthOfTimerBar}
 									secondsToMins={this.secondsToMins} />	
 				
-								<Controls sounds={this.props.sounds} 
+								<Controls 
 									isPlaying={this.state.isPlaying} 
-									currentTime={this.state.currentTime} 
-									currentSoundIndex={this.state.currentSoundIndex} 
-									currentWidth={this.state.currentWidthOfTimerBar} 
 									backButtonIsDisabled={this.state.backButtonIsDisabled} 
 									playButtonIsDisabled={this.state.playButtonIsDisabled} 
 									forwardButtonIsDisabled={this.state.forwardButtonIsDisabled} 
-									secondsToMins={this.secondsToMins}  
 									playPauseSound={this.playPauseSound} 
 									goBack={this.goToPreviousSound} 
 									goForward={this.goToNextSound} />
