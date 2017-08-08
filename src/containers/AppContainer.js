@@ -314,8 +314,7 @@ class AppContainer extends Component {
 		return(<div>
 				<div id="main-container" className={this.state.sidePanelIsOpen === true ? 'swipe-left' : ''}>
 					<div className="ovrlay">
-						<Header toggleSidePanel={this.toggleSidePanel} 
-								sidePanelIsOpen={this.state.sidePanelIsOpen} />
+						<Header toggleSidePanel={this.toggleSidePanel} />
 						<SoundsList sounds={this.props.sounds} 
 								currentSoundIndex={this.state.currentSoundIndex}
 								selectSound={this.selectSound} />
