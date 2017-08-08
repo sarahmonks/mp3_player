@@ -2,18 +2,19 @@ import React from 'react';
 import './timer-bar.css';
 
 const TimerBar = props => {
-	//This is a stateless component for the timer bar of the audio player. 
-	//
+	//This is a stateless component used in the AppContainer container
+	//This component contains the HTML for the timer bar area of the audio player. 
 
 	//To this component, we pass in the following states as properties (These states are defined in AppContainer):
     //currentSoundIndex (integer)
-    //sounds (array)
     //currentWidthOfTimerBar (float)
     //currentTime (string)
 
     //And we pass in the following method as a property (defined in AppContainer):
     //secondsToMins (parameter: seconds (integer))
 
+    //We also pass in the sounds array of JSON data which is passed in as a property to the AppContainer in src/index.js
+    //sounds (array)
 
 	//firstly we get the duration of the current sound in the player so we can display it in the controls area.
 	var duration;
