@@ -1,3 +1,5 @@
+/*This file contains the main CSS styles of the application */
+/*Firstly reset all default styles for the main HTML5 tags*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, address, em, img, q,small, strong, b, i,
 ol, ul, li,form, label, table, caption,tr, th, td,
@@ -41,6 +43,7 @@ position: relative;
 font-size: 1.0rem;
 }
 
+/*heading tags*/
 h1{
 font-size: 1.3rem;
 }
@@ -65,7 +68,7 @@ background-color: #939396;
 ::-webkit-scrollbar-thumb:hover {  
 background-color: #dfdfdf; 
 } 
-
+/*styling to add scrolling functionality to a container. It is currently used on the container which holds the sounds list*/
 .scrollable{
 overflow: scroll;
 -webkit-transition-property: top, bottom;
@@ -85,7 +88,7 @@ transition-timing-function: linear, linear;
 -webkit-overflow-scrolling: touch;
 }
 
-
+/*styling for containers which scrolling has been added to with the scrollable class*/
 .scrollable-container{
 position: absolute;
 left: 0px;
@@ -102,42 +105,13 @@ transition: .3s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ 
 height: 100%;
 }
 
-
-
-.btn-inline{
-background: none;
-padding: 5px 0px 0px 0px !important;
-outline: 0;
-border: 0;
-font-size: 18px;
-width: 40px;
-height: 40px;
-color: #f20c96;
-cursor: pointer;
-text-align: center;
-display: block;
-float: left;
-}
-
-
-
-.overlay{	
-height: 100%;
-background-attachment: fixed;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e4149+0,586168+100&0.85+0,0.65+100 */
-background: -moz-linear-gradient(top, rgba(62,65,73,0.85) 0%, rgba(88,97,104,0.65) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(62,65,73,0.85) 0%,rgba(88,97,104,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(62,65,73,0.85) 0%,rgba(88,97,104,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d93e4149', endColorstr='#a6586168',GradientType=0 ); /* IE6-9 */
-}
-
+/*styling for the main container of the application*/
 #main-container{
 position: absolute;
 left: 0px;
 top: 0px;
 width: 100%;
 height: 100%;
-
 overflow: auto;
 z-index: 4; /*the main-container div needs to have a higher z-index than the side panel area so that it sits on top of it*/
 /*add css transitions for when the main-container is swiped to the left and right*/
@@ -155,8 +129,19 @@ background: linear-gradient(to bottom, rgba(61,64,71,1) 1%,rgba(76,80,89,1) 100%
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d4047', endColorstr='#4c5059',GradientType=0 ); /* IE6-9 */
 }
 
+/*styling for overlay class which will create a darkening effect within the main-container*/
+.overlay{	
+height: 100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3e4149+0,586168+100&0.85+0,0.65+100 */
+background: -moz-linear-gradient(top, rgba(62,65,73,0.85) 0%, rgba(88,97,104,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(62,65,73,0.85) 0%,rgba(88,97,104,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(62,65,73,0.85) 0%,rgba(88,97,104,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d93e4149', endColorstr='#a6586168',GradientType=0 ); /* IE6-9 */
+}
+
+/*styling for controls-area which will be fixed to the bottom of the screen*/
 #controls-area{
-position: fixed;
+position: fixed; 
 left: 0px;
 bottom: 0px;
 height: 155px;
@@ -178,45 +163,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d4047', end
 -moz-transform: translateX(-80%);  
 -o-transform: translateX(-80%);  
 transform: translateX(-80%);
-}
-
-
-
-/*Styling for form fields*/
-input[type="text"]{
-box-shadow: none;
--moz-box-shadow: none;
--webkit-box-shadow: none;
-border: 0px;
-outline: 0px;
-background:none;
-
-border:1px solid #8b8a8a;
-color:#eceaea;
-font-size: 1.0rem;
-border-radius:2px; 
--moz-border-radius:2px;
--webkit-border-radius:2px;
-width: 90% !important;
-height:26px;
-font-family: Raleway, FontAwesome; /*need to put font awesome here for the icons in the input fields */
-display: block;
-letter-spacing: .7px; 
-padding: 5px 2% 5px 2% !important;
-margin: 10px auto;
-}
-
-
-input[type="text"]:focus{
-overflow: visible;
-color: #fff; 
-border:1px solid #999898;
-box-shadow: inset 0px 0px 0px 100px #000;
--moz-box-shadow: inset 0px 0px 0px 100px #000;
--webkit-box-shadow: inset 0px 0px 0px 100px #000;
-}
-
-
-input[type="text"]:-moz-placeholder, input[type="text"]::-webkit-input-placeholder{ 
-color: #eceaea;
 }

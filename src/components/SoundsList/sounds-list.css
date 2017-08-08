@@ -38,6 +38,7 @@ height: 20px;
 .sound-artist{
 font-size: .9rem;
 }
+/*styling for the icon symbolizing a "add to favorites" button. The "add to favorites" functionality has not been implemented yet*/
 .fa-heart{
 margin-left: 20px;
 color: #ff01ea;
