@@ -1,9 +1,12 @@
+
+/*CSS styling for SoundsList component*/
 #list-of-sounds-container{
 padding-top: 50px;
 overflow: hidden; 
 z-index: 5;
 }
 
+/*styling for the list-of-sounds ul*/
 #list-of-sounds{
 position: relative;
 width: 100%;
@@ -11,6 +14,7 @@ min-height: 800px;
 height: 100%;
 }
 
+/*styling for individual li items in the sounds list ul*/
 .sound-list-item{
 padding: 5px 4% 10px 4%;
 width: 92%;
@@ -19,7 +23,7 @@ cursor: pointer;
 border-bottom: 1px solid #5b606c;
 overflow: hidden;
 }
-
+/*styling for sound-info-area containing title and artist of sound*/
 .sound-info-area{
 float: left;
 display: block;
@@ -39,8 +43,8 @@ margin-left: 20px;
 color: #ff01ea;
 font-size: 26px;
 }
+/*styling for sound list item which is currently playing*/
 .selected{
-background: #6a707c;
 background: #313339;
 box-shadow: 		inset -3px 0px 0px 0px rgba(4,191,251,1), inset 3px 0px 0px 0px rgba(4,191,251,1); 
 -moz-box-shadow: 	inset -3px 0px 0px 0px rgba(4,191,251,1), inset 3px 0px 0px 0px rgba(4,191,251,1);  

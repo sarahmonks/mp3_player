@@ -1,10 +1,12 @@
 
+/*CSS styling for Controls component*/
 #controls{
 position: relative;
 margin: 3px auto 5px auto;
 width: 234px;
 }
 
+/*styling for the audio control buttons i.e play, backward, forward*/
 .btn-control{
 background: none;
 padding: 0px !important;
@@ -19,6 +21,7 @@ cursor: pointer;
 text-align: center;
 border-radius: 50%;
 }
+/*styling for the font awesome icon within the control button*/
 .btn-control i{
 padding: 2px;
 font-size: 24px;
